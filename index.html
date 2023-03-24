@@ -14,6 +14,7 @@
 <body>
     
     <header class="cabecalho">
+
         <div class="container">
             <input type="checkbox" id="menu" class="container__botao">
             <label for="menu">
@@ -21,35 +22,36 @@
             </label>
             <ul class="lista-menu">
                 <li class="lista-menu__titulo">Categorias</li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Programação</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Front-end</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Infraestrutura</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Business</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Design & UX</a>
-                </li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Programação</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Front-end</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Infraestrutura</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Business</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Design & UX</a></li>
             </ul>
             <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>Books</h1>
         </div>
+
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="opções__botão">
+            <label for="opções-menu"><li class="opções__item">Categoria</li></label>
+            <ul class="lista-menu">
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Programação</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Front-end</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Infraestrutura</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Business</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Design & UX</a></li>
+            </ul>
+            <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+            <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+        </ul>
+
         <div class="container">
-            <a href="#">
-                <img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem">
-            </a>
-            <a href="#">
-                <img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem">
-            </a>
-            <a href="#">
-                <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
-            </a>
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem  container__imagem-transparente"></a>
+            <a href="#"><img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
+            <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
         </div>
+
     </header>
 
     <section class="banner">
@@ -168,8 +170,10 @@
     </section>
 
     <section class="contato">
-        <h2 class="contato__titulo">Fique por dentro das novidades</h2>
-        <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <div class="contato__descricao">
+            <h2 class="contato__titulo">Fique por dentro das novidades</h2>
+            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
         <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
     </section>
 
@@ -177,13 +181,46 @@
 
     <footer class="rodapé">
         <h2 class="rodapé__titulo">Grupo Alura</h2>
+
+        <div class="rodapé__tablet">
+            <ul class="lista-rodapé">
+                <h2 class="rodapé__titulo-tablet">Grupo Alura</h2>
+            </ul>
+            <ul class="lista-rodapé__educação">
+                <li class="item-titulo">Educação</li>
+                <li class="item"><img src="img/Caelum.svg"><a href="#" class="educação__link">Caelum</a></li>
+                <li class="item"><img src="img/CasaDoCodigo.svg"><a href="#" class="educação__link">Casa do Código</a></li>
+            </ul>
+            <ul class="lista-rodapé__educação-online">
+                <li class="item-titulo">Educação Online</li>
+                <li class="item"><img src="img/Alura.svg"><a href="#" class="educação-online__link">Alura</a></li>
+                <li class="item"><img src="img/AluraEmpresas.svg"><a href="#" class="educação-online__link">Alura para empresas</a></li>
+                <li class="item"><img src="img/AluraLatam.svg"><a href="#" class="educação-online__link">Alura LATAM</a></li>
+                <li class="item"><img src="img/AluraStart.svg"><a href="#" class="educação-online__link">Alura Start</a></li>
+                <li class="item"><img src="img/MusicDot.svg"><a href="#" class="educação-online__link">MusicDot</a></li>
+                <li class="item"><img src="img/AluraLingua.svg"><a href="#" class="educação-online__link">Alura Língua</a></li>
+                <li class="item"><img src="img/PM3.svg"><a href="#" class="educação-online__link">PM3</a></li>
+            </ul>
+            <ul class="lista-rodapé__comunidade">
+                <li class="item-titulo">Comunidade</li>
+                <li class="item"><img src="img/HipstersTech.svg"><a href="#" class="comunidade__link">Hipsters ponto Tech</a></li>
+                <li class="item"><img src="img/Scuba.svg"><a href="#" class="comunidade__link">Scuba Dev</a></li>
+                <li class="item"><img src="img/Layers.svg"><a href="#" class="comunidade__link">Layers ponto Tech</a></li>
+                <li class="item"><img src="img/LikeABoss.svg"><a href="#" class="comunidade__link">Like a Boss</a></li>
+                <li class="item"><img src="img/CarreiraSemFronteira.svg"><a href="#" class="comunidade__link">Carreira sem fronteira</a></li>
+                <li class="item"><img src="img/HipstersJobs.svg"><a href="#" class="comunidade__link">Hipsters ponto Jobs</a></li>
+                <li class="item"><img src="img/GUJ.svg"><a href="#" class="comunidade__link">GUJ</a></li>
+            </ul>
+        </div>
     </footer>
+
+    
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
-            spaceBetween: 10,
+            spaceBetween: 20,
             slidesPerView: 3,
             pagination: {
                 el: '.swiper-pagination',
