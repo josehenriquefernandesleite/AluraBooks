@@ -102,3 +102,11 @@
         margin: 2em auto;
     }
 }
+
+@media screen and (min-width: 1728) {
+
+    .carrosel__container {
+        display: flex;
+        border: 1px solid red;
+    }
+}
